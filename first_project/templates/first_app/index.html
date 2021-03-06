@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {% static 'css/mycss.css' %} ">
+    <title>Django Templates</title>
+</head>
+<body>
+    <h1>This is index.html</h1>
+    {{ insert_me }}
+    <h2>Inserting static files now</h2>
+    <img src="{% static 'images/imgg.jpg'%}" alt="">
+</body>
+</html>

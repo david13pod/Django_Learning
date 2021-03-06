@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+{% extends "tempApp/base.html" %}
+
+    {% block body_block %}
+
+    {% load my_filter %}
+    <h1>Welcome to Index</h1>
+    <h2>The index page using template inheritance</h2>
+    <h2> {{text|upper}} </h2><br>
+
+   
+    <h2> {{text|cutter:'Hello'}} </h2><br>
+    <h3>
+        {{number|add:"90"}}
+    </h3>
+   
+
+    {% endblock  %}

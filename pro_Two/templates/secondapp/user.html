@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/new.css' %}" >
+    <title>Help Django</title>
+</head>
+<body>
+    <h1>Welcome to the Users page</h1><br>
+    <h2>Here are your user records</h2>
+    {{insertHere}}
+
+    <div class="user">
+        {% if user_records %}
+            {% for fusr in user_records %}
+            <p>USER INFO</p>
+            <ul>
+                <li> {{fusr.firstname}}</li>
+                <li>{{fusr.lastname}}</li>
+                <li>{{fusr.email}}</li>
+            </ul>
+
+            {% endfor %}
+        {% else %}
+        <p>No user record found</p>
+        {% endif  %}
+    </div>
+
+</body>
+</html>

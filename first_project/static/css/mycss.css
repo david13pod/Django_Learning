@@ -1,0 +1,7 @@
+h2 {
+    color: rebeccapurple;
+    font-size: 25px;
+}
+table,td,th{
+    border: 2px solid black;
+}
